@@ -1,0 +1,125 @@
+
+.control_homepage{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text_show{
+    display: flex;
+    justify-content:end;
+    width: 50%;
+}
+.profile_show{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.control_image{
+    width: 350px;
+    height: 450px;
+    transition: transform 0.5s;
+}
+.control_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 3px solid rgb(73, 72, 72);
+    box-shadow: 0px 0px 10px black;
+}
+.control_image:hover{
+  transform: scale(1.1);
+}
+.text_show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .text_control h1, .text_control span {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    
+    
+  }
+  .text_control{
+    width: 400px;
+  }
+  
+  .text_control h1 {
+    font-size: 50px;
+    animation-delay: 0.5s;
+    font-weight: 700;
+  }
+  
+  .text_control span {
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    animation-delay: 1s;
+  }
+  
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+  @keyframes skill {
+    0% {
+      background-position: 0% 0%;
+      opacity: 0.2;
+    }
+    50% {
+      background-position: 50% 0%;
+      opacity: 1;
+    }
+    100% {
+      background-position: 100% 0%;
+      opacity: 0.2;
+    }
+  }
+  .text_control h3 {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, rgb(0, 255, 170), rgb(66, 5, 248), rgb(237, 32, 0));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 40px;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    width: 300px;
+    animation: typing 3s steps(20) forwards infinite, blink 3s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+  }
+
+  
+
+  
+  
+  
+  

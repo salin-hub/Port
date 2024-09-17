@@ -1,0 +1,86 @@
+
+  .control_work {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+
+  }
+  .title_skill {
+    width: 50vw;
+  }
+  .title_skill h1{
+    margin-left: 65px;
+    padding: 0;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 0 0 10px rgb(167, 120, 214);
+  }
+  
+  .image_skill {
+    width: 500px;
+    height: 450px;
+    text-align: center;
+    transition: transform 0.2s ;
+  }
+  .image_skill img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 68, 255);
+    box-shadow: 0 0 10px black;
+  }
+  .image_skill:hover{
+    transform: scale(1.05);
+  }
+  
+  .skills {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 0 10px;
+  }
+  
+  .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .skill span {
+    flex: 0.8;
+    font-size: 18px;
+  }
+  
+  .rating {
+    flex: 2;
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .filled {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0; /* Initial width set to 0 for animation */
+    transition: width 2s ease-in-out; /* Animation duration and easing */
+  }
+  
+  /* Animation keyframes for progressive fill effect */
+  @keyframes fillAnimation {
+    from {
+      width: 0;
+    }
+    to {
+      width: var(--skill-percentage); /* Using CSS variable for dynamic width */
+    }
+  }
+  
+  
